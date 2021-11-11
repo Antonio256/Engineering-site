@@ -1,0 +1,546 @@
+
+:root{
+    
+    --primary-color: rgb(0, 43, 61); 
+    --secondary-color: lightblue; 
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: #fff;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    /* border: 1px solid #fff; */
+    max-width: 1240px;
+    padding: 10px 30px;
+    margin: auto;
+    /* overflow: hidden; */
+
+}
+
+.tagline h3 {
+    /* border: 1px solid red; */
+    max-width: 50%;
+    text-align: left;
+    position: relative;
+    left: 80px;
+    top: 10px;
+    font-style: italic;
+    font-size: 16px;
+    /* align-self: flex-start;  */
+    /* align-items: left; */
+    /* text-align: left; */
+}
+
+.top-header{
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    /* padding: 10px; */
+    margin: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+    
+    
+}
+
+.logo{
+    /* border: 1px solid #000; */
+    display: flex;
+    /* max-width: 300px; */
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.nav img{
+    /* background-image: url(../images/logofinal.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo h1{
+    font-size: 25px;
+    font-weight: 500;
+    /* padding-top: 20px; */
+    /* color: #000; */
+    /* gap: 10px; */
+}
+
+h1 span{
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+
+nav{
+    /* border: 1px solid #fff; */
+    /* padding: 10px; */
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* text-decoration: none; */
+    /* align-items: stretch; */
+    padding: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    flex: 1;
+
+}
+
+nav ul {
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    align-self: center;
+    /* margin: auto; */
+    padding: 5px 2px 5px 0px;
+    list-style-type: none;
+
+}
+
+nav ul li{
+    /* border: 1px solid red; */
+    /* padding: 5px; */
+    margin: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    font-weight: 400;
+    line-height: 2.5;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover{
+    
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+/* Profile */
+.profile{
+    /* border: 1px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    /* gap: 30px; */
+    padding: 10px;
+    margin: 10px;
+    height: 110vh;
+    margin: auto;
+    /* width: 1240px; */
+
+} 
+
+.profile-content{
+    display: flex;
+    flex-direction: column; 
+    /* border: 1px solid #000; */
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    max-width: 50%;
+    /* height: 100vh; */
+    padding: 2px;
+    
+}
+
+.profile-content h2 {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.profile-content p {
+    padding: 10px;
+    justify-content: space-around;
+    align-items:flex-start;
+    text-align: center;
+    margin: 10px;
+    line-height: 1.5em;
+    /* flex: 1; */
+    /* border: 1px solid #fff; */
+}
+
+
+.profile .profile-img{
+    /* border: 1px solid #fff; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-self: stretch; */
+    background: url(../images/house.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: var(--secondary-color) rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    height: 110vh;
+    /* padding: 10px; */
+    /* margin: auto;   */
+}
+
+/* Focus Mission and Vision */
+.focus{
+    /* border: 1px solid red; */
+    /* padding: 30px; */
+    /* margin: auto; */
+    height: 40vh;
+    /* background-color: var(--secondary-color); */
+}
+
+.mission, .vision{
+    /* border: 1px solid #ffff; */
+    max-width: 50%;
+    
+    padding: 10px;
+    justify-content: space-between;
+    /* align-items: stretch; */
+    /* flex-wrap: wrap; */
+    /* text-align: center; */
+    /* align-items: center; */
+    margin: 20px;
+    flex: 1;
+}
+
+.mission h2, .vision h2{
+    padding-top: 5px;
+    text-align: center;
+}
+
+.mission p, .vision p{
+    padding-top: 20px;
+    margin: 5px;
+    
+}
+
+/* Core values */
+.values{
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin: auto;
+}
+
+.core-values {
+    /* border: 1px solid #fff; */
+    justify-content: space-between;
+    align-items: flex-start
+    /* padding: 10px;
+    margin: 5px; */
+}
+
+.core-values h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.core-values ul{
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/* Portfolio */
+
+.works{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.works h2{
+    text-align: center;
+    padding-top: 10px;
+}
+.portfolio{
+    /* border: 1px solid #fff; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    /* flex-direction: column; */
+}
+
+.portfolio .item{
+    /* border: 1px solid #000; */
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* padding: 10px; */
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.portfolio .item .img{
+    
+    /* background: url(../images/residential-kira.png); */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio .item .action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: 0.5;
+
+}
+
+.portfolio .item .action a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+}
+
+
+.portfolio .item:hover .action{
+    opacity: 1;
+    transition: 0.9s;
+    
+}
+
+/* Footer */
+
+footer{
+    /* border: 1px solid red; */
+    /* height: 50vh; */
+    padding-top: 30px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    /* align-items: start; */
+    /* margin: 0 auto; */
+    background: var(--secondary-color);
+    /* background: linear-gradient(180deg,  #f1efef, #f0f0f0); */
+}
+
+footer img{
+    /* border: 1px solid #fff; */
+    width: 30px;
+    padding-top: 30px;
+
+}
+
+footer h4{
+
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+footer p{
+    margin: 10px;
+    padding-top: 20px;
+    font-size: 18px;
+    
+}
+
+footer a{
+    /* border: 1px solid red; */
+    /* padding-top: 20px; */
+    color: #fff;
+    text-decoration: none;
+    /* margin: 5px 0 10px 0; */
+    /* padding: 5px; */
+    
+}
+
+.overlay{
+    /* position: absolute; */
+    background:rgba(37, 36, 37, 0.75);
+    /* background: rgba(0,0,0,0.75); */
+
+    /* background-blend-mode: var(--secondary-color); */
+    width: 100%;
+    height: 110vh;
+    padding-top: 5px;
+    /* border: 1px solid red; */
+    /* z-index: 1; */
+
+}
+
+
+
+@media(max-width: 768px){
+
+    .container{
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        overflow: hidden;
+        border: 1px solid #000; */
+    }
+
+    .tagline h3{
+        /* text-align: center;
+        max-width: 100%;
+        left: 30px;
+        align-content: space-between;
+        display: flex; */
+        display: none;
+    }
+
+
+    .top-header{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        border-bottom: 1px solid var(--secondary-color);
+        flex: 1;
+    }
+
+    .logo{
+        /* border: 1px solid #fff; */
+        /* max-width: 260px; */
+        align-items: center;
+        /* text-align: center; */
+        margin: auto;  
+    }
+
+    .logo img{
+        align-items: center;
+        width: 80%;
+        height: 80%;
+        
+    }
+/* 
+    .logo h1{
+        font-size: 25px;
+        font-weight: 500;
+    }  */
+
+    nav {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        border-bottom: 2px solid var(--secondary-color);
+
+        /* padding: 10px; */
+        /* display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; */
+        /* text-decoration: none; */
+        /* align-items: flex-end; */
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-size: 15px;
+        /* margin: auto; */
+        padding: 5px;
+        font-weight: 400;
+        /* line-height: 2.5; */
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        /* margin: 5px;
+        padding: 5px; */
+        /* font-weight: 400; */
+        line-height: 1.5;
+    }
+
+    .profile{
+        /* height: 90vh; */
+        /* border: 1px solid red; */
+    }
+
+    .profile .profile-content{
+        /* display: flex; */
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        /* height: 80vh; */
+        font-size: 16px;
+        /* order: 2; */
+    }
+    .profile-content h2 {
+        padding-top: 5px;
+        text-align: center;
+        
+    }
+    .profile-content p {
+        padding: 10px;    
+    }
+    
+    .profile .profile-img{
+        display: none;
+    }
+
+    .focus{
+        /* border: 1px solid red; */
+        height: 60vh;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* align-self: stretch; */
+    } 
+    
+    .mission, .vision{
+        max-width: 100%;
+        align-items: center;
+        
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
